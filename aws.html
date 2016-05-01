@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="aws.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<title>AWS SS16</title>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+}); 
+    
+$(document).ready(function(){
+     $("#show").click(function(){
+        $("p").show();
+    });
+}); 
+/*
+$(document).ready(function(){
+    $("li").hover(function(){
+       $("li").hide();
+   });
+}); 
+*/
+$(document).ready(function(){
+    $("li").hover(function(){
+        $("li").css("background-color", "yellow");
+    });
+});
+
+$(document).ready(function(){
+    $("li").mouseleave(function(){
+        $("li").css("background-color", "white");
+    });
+});
+
+
+
+</script>
+
+</head>
+<body>
+
+<h1>Anwendungssysteme SS 2016</h1>
+
+<p> Anwendungssysteme wird in dieser Form zum zweiten Mal an der TUB angeboten </p>
+
+<p> Inhalte sind unter anderem </p>
+<ul>
+<li>Anwendungsarchitekturen </li>
+<li>Auszeichnungssprachen </li>
+<li>RESTful Services </li>
+</ul>
+<p> HTML sollten die <b>Teilnehmer</b>  aus zwei Gründen beherrschen </p>
+
+<ol>
+<li> Grundlage für das heutige Web </li>
+<li> Anschauliches Beispiel für eine Markup Language </li>
+
+
+
+</ol>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
